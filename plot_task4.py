@@ -1,6 +1,6 @@
 from process_data import *
 
-# Find the breakpoints for interval 5 to 0 degC
+# Find the breakpoints
 break_temperatures = [0, 1, -1]
 
 breakpoints = [[-1]*len(stringTemperatures) for i in break_temperatures]
