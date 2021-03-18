@@ -1,8 +1,8 @@
 from process_data import *
 
 # Settings
-output_plot_file = 'plots/task1_all_temperature_profiles.png'
-plot_title = "Task 1: All temperature profiles"
+output_plot_file = 'plots/task2_all_temperature_profiles.png'
+plot_title = "Task 2: All temperature profiles"
 
 # Plot
 fig = plt.figure()
