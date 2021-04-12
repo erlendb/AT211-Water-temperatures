@@ -8,7 +8,8 @@ from datetime import datetime
 # Settings
 data_file = 'data/data_2021-02-04_A.dat'
 data_starts_at_line = 2
-skip_data_points = 100
+#skip_data_points = 100
+skip_data_points = False
 
 # Format data
 file = open(data_file, 'r')
@@ -20,8 +21,9 @@ data = []
 for index, line in enumerate(lines):
     if index < data_starts_at_line - 1:
         continue
-    if (index % skip_data_points) != 0:
-        continue
+    if skip_data_points is not False:
+        if (index % skip_data_points) != 0:
+            continue
 
     line = line.split()
 
